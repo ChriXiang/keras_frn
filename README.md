@@ -8,3 +8,12 @@ paper: [Filter Response Normalization Layer: Eliminating Batch Dependence in the
 
 see https://github.com/gupta-abhay/pytorch-frn
 
+## Example Usage
+
+```
+>> ...
+>> x = Conv2D(64, (3,3))(x)
+>> x = FilterResponseNorm2d(64)(x) #specify input channel numbers
+>> x = Activation('relu')(x)
+>> ...
+```
