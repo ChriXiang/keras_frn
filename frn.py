@@ -73,7 +73,6 @@ class FilterResponseNorm3d(FilterResponseNormNd):
         super(FilterResponseNorm3d, self).__init__(
             5, num_features, eps=eps, learnable_eps=learnable_eps, **kwargs)
 
-def install_frn():
-    get_custom_objects().update({'FilterResponseNorm1d': FilterResponseNorm1d})
-    get_custom_objects().update({'FilterResponseNorm2d': FilterResponseNorm2d})
-    get_custom_objects().update({'FilterResponseNorm3d': FilterResponseNorm3d})
+get_custom_objects().update({'FilterResponseNorm1d': FilterResponseNorm1d})
+get_custom_objects().update({'FilterResponseNorm2d': FilterResponseNorm2d})
+get_custom_objects().update({'FilterResponseNorm3d': FilterResponseNorm3d})
